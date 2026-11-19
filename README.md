@@ -1,4 +1,8 @@
-﻿# mr_flico
+﻿<p align="center">
+  <img src="assets/mr-flico-logo.png" alt="Mr Flico — Model Rocket Flight Computer" width="240" />
+</p>
+
+# mr_flico
 
 **M**odel **R**ocket **FLI**ght **CO**mputer — An RP2350-based avionics PCB designed for high-reliability flight logging, telemetry, and recovery in model and high-power rocketry.
 
