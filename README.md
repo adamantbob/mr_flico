@@ -1,5 +1,5 @@
 ﻿<p align="center">
-  <img src="assets/mr-flico-logo.png" alt="Mr Flico — Model Rocket Flight Computer" width="240" />
+  <img src="mr-flico-logo.png" alt="Mr Flico — Model Rocket Flight Computer" width="240" />
 </p>
 
 # mr_flico
