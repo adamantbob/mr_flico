@@ -1,0 +1,27 @@
+﻿# KiCad user-specific project and workspace settings
+*.kicad_prl
+
+# KiCad backup and autosave files
+*.kicad_pcb-bak
+*-save.kicad_pcb
+*_autosave*
+*.bak
+*-backups/
+
+# Cache files
+fp-info-cache
+
+# Editor and IDE local history / workspaces
+.history/
+.vscode/
+
+# Operating system metadata
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Manufacturing and export outputs (uncomment if you generate these locally and don't track them)
+# gerbers/
+# *.gbr
+# *.drl
+# *.pdf

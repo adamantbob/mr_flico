@@ -1,0 +1,320 @@
+(footprint "mike_microSD_HC_Molex_47219-2001"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "1.10mm Pitch microSD Card Connector, Hinge Type, https://www.molex.com/pdm_docs/sd/472192001_sd.pdf")
+	(tags "Micro SD")
+	(property "Reference" "REF**"
+		(at 0 -8.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "33d57779-d0db-46eb-b033-ac0f085c7824")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "mike_microSD_HC_Molex_47219-2001"
+		(at 0 8.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "809725c6-ee3a-4ad0-b0a0-38863d55a820")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8d26a1a8-5b46-4d4f-b1cf-bd97c3766fc0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ecb95472-f0e0-4ae0-a423-2a8a8b8435cf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -6.91 -7.36)
+		(end -6.91 -5.96)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d5d59e3f-9497-4809-977e-5b2d4be6f90c")
+	)
+	(fp_line
+		(start -6.91 -7.36)
+		(end 6.91 -7.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1e4a1690-a71b-437e-8846-20a888413719")
+	)
+	(fp_line
+		(start -6.91 2.34)
+		(end -6.91 -3.44)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "951cb326-9e27-4d6c-91fc-ff52f0dc6edf")
+	)
+	(fp_line
+		(start -6.91 4.86)
+		(end -6.91 7.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5bce5944-1b48-41ea-aac5-6a9e67f37ee0")
+	)
+	(fp_line
+		(start -6.91 7.36)
+		(end 6.91 7.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "83403e7c-298f-44de-bc83-94fe6ac967ce")
+	)
+	(fp_line
+		(start 6.91 -7.36)
+		(end 6.91 -5.96)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fae7dbdc-585e-4aee-8061-22a434c76980")
+	)
+	(fp_line
+		(start 6.91 -3.44)
+		(end 6.91 2.34)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b52d4d20-6676-4c91-82d7-318c59bf8fdc")
+	)
+	(fp_line
+		(start 6.91 4.86)
+		(end 6.91 7.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fbb58d9b-b3a8-423c-a40f-e5eb9f416499")
+	)
+	(fp_line
+		(start -7.85 -7.5)
+		(end -7.85 7.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5412e23c-de43-43a6-a23e-70c5920e8725")
+	)
+	(fp_line
+		(start -7.85 -7.5)
+		(end 7.85 -7.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8ea5d4f8-c153-4b6c-8023-0329b62626f4")
+	)
+	(fp_line
+		(start -7.85 7.5)
+		(end 7.85 7.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e98210ff-6a92-49a1-9d20-1b465e9226bd")
+	)
+	(fp_line
+		(start 7.85 -7.5)
+		(end 7.85 7.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1fa4c656-8a65-4fdf-8e04-66ec3b56becf")
+	)
+	(fp_line
+		(start -6.8 -7.25)
+		(end 6.8 -7.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7747aafa-880e-4eee-a6aa-57cd87129de5")
+	)
+	(fp_line
+		(start -6.8 7.25)
+		(end -6.8 -7.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ddcef30c-ea96-41e1-9b52-8ab7e56e2b39")
+	)
+	(fp_line
+		(start -6.8 7.25)
+		(end 6.8 7.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "63a1a9c6-d167-4169-82bb-b1bb4c4e39de")
+	)
+	(fp_line
+		(start 6.8 -7.25)
+		(end 6.8 7.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8201a9be-405e-4742-863c-4c3becee39cb")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "828309d1-6ae1-48e3-b09f-454c04b26213")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.205 -2.1)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "95106f54-67f0-4413-b5cb-be04c48c07ab")
+	)
+	(pad "2" smd rect
+		(at -2.105 -2.1)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fdf9eb78-34c4-4d59-8878-8d37c5a90ec3")
+	)
+	(pad "3" smd rect
+		(at -1.005 -2.1)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e618c318-b9c7-4295-bfb7-58de28f07c56")
+	)
+	(pad "4" smd rect
+		(at 0.095 -2.1)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4f23c29f-f607-43b3-86a1-1dd4245334cd")
+	)
+	(pad "5" smd rect
+		(at 1.195 -2.1)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9529c1c8-83c6-4b2f-9b40-fc8ed26ad65e")
+	)
+	(pad "6" smd rect
+		(at 2.295 -2.1)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "770fe0e9-292c-4df4-b943-be67daac3f8c")
+	)
+	(pad "7" smd rect
+		(at 3.395 -2.1)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8175aaa5-aa71-4021-b1a6-8047b708ab75")
+	)
+	(pad "8" smd rect
+		(at 4.495 -2.1)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "272a11d5-61ec-4737-af40-a0849b52978c")
+	)
+	(pad "SH" smd roundrect
+		(at -6.875 -4.7)
+		(size 1.45 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "20af6900-aaf1-49f8-be42-0715b1ff0aba")
+	)
+	(pad "SH" smd roundrect
+		(at -6.875 3.6)
+		(size 1.45 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "617020ba-f70c-4ad8-84d6-1b171fb2d7f3")
+	)
+	(pad "SH" smd roundrect
+		(at 6.875 -4.7)
+		(size 1.45 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "4ceaf61b-a5df-4364-a478-14b5e1d7c427")
+	)
+	(pad "SH" smd roundrect
+		(at 6.875 3.6)
+		(size 1.45 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "3e344355-0624-464b-ad6f-93c231326f44")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/rocket.pretty/472192001.stp"
+		(offset
+			(xyz 0 -0.5 2)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -180)
+		)
+	)
+)
