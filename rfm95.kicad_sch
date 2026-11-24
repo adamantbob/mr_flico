@@ -1198,10 +1198,6 @@
 		(at 104.14 80.01)
 		(uuid "cfb011e8-42c2-488b-b9af-b7a4f193fa58")
 	)
-	(no_connect
-		(at 125.73 66.04)
-		(uuid "ea6d6646-30b2-461d-9475-4498bdca2aa6")
-	)
 	(bus_entry
 		(at 165.1 92.71)
 		(size -2.54 2.54)
@@ -2006,6 +2002,17 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "JLCPCB Part Number" "C1525"
+			(at 128.27 67.3099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(pin "2"

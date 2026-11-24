@@ -4673,6 +4673,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part Number" "C1525"
+			(at 77.47 63.4999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "2"
 			(uuid "87c7e0ef-4323-44ad-8186-76a43bf25da9")
 		)

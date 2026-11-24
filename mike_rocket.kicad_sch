@@ -1942,7 +1942,7 @@
 		)
 		(uuid "a1863b3a-34b0-439b-b3ab-43feb63f6194")
 	)
-	(text "TODO List\nx | RP2350\nx | Flash\nx | Crystal\nx | Debug Connector\nx | LM6DSOX\nx | ADXL375\nx | RFM95\nx | Altimeter\nx | Power Draw Monitor\nx | GPS\nz | Battery Terminal\n  | USB Connection\n  | Power Management\n  | Pyros\n  | Status LEDs\n  | Test Points\n  | Connectors"
+	(text "TODO List\nx | RP2350\nx | Flash\nx | Crystal\nx | Debug Connector\nx | LM6DSOX\nx | ADXL375\nx | RFM95\nx | Altimeter\nx | Power Draw Monitor\nx | GPS\nz | Battery Terminal\n  | USB Connection\n  | Power Management\n  | Pyros\nx | Status LEDs\n  | Test Points\n  | Connectors"
 		(exclude_from_sim no)
 		(at 17.526 178.308 0)
 		(effects
