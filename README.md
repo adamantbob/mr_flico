@@ -98,7 +98,7 @@ mr_flico/
 
 ## 🛠️ Toolchain & Requirements
 
-* **ECAD**: [KiCad 8.0+](https://www.kicad.org/)
+* **ECAD**: [KiCad 10.0+](https://www.kicad.org/)
 * **Firmware**: Companion firmware is developed in [`rocket_vR`](https://github.com) using **Rust** with the [Embassy](https://embassy.dev/) async embedded framework.
 * **3D Models**: Footprint 3D models (`.step` / `.stp`) are stored in `rocket.pretty/` and referenced relatively via `${KIPRJMOD}/rocket.pretty/<model>.step`.
 
