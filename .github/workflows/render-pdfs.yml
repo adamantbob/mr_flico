@@ -25,9 +25,10 @@ jobs:
 
       - name: Render schematics, composite PCB, and 3D views
         run: |
+          REV=$(printf '%.7s' "$GITHUB_SHA")
           python3 scripts/render_pdfs.py \
             --include-inner \
-            --rev "${GITHUB_SHA::7}" \
+            --rev "$REV" \
             --output build/pdfs/mike_rocket_docs.pdf
 
       - name: Upload combined PDF artifact
