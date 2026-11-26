@@ -19,12 +19,13 @@ jobs:
 
       - name: Set up Python dependencies
         run: |
-          python3 -m venv /tmp/render-venv
-          /tmp/render-venv/bin/pip install --no-cache-dir -r scripts/requirements.txt
+          apt-get update
+          apt-get install -y --no-install-recommends python3-pip
+          pip3 install --no-cache-dir --break-system-packages -r scripts/requirements.txt
 
       - name: Render schematics, composite PCB, and 3D views
         run: |
-          /tmp/render-venv/bin/python scripts/render_pdfs.py \
+          python3 scripts/render_pdfs.py \
             --include-inner \
             --rev "${GITHUB_SHA::7}" \
             --output build/pdfs/mike_rocket_docs.pdf
