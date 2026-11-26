@@ -466,6 +466,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -528,8 +529,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": [
       {
         "netclass": "DP_USB_90R",
@@ -559,6 +560,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -681,7 +683,7 @@
         "uuid": "71b2a105-4f83-4bf6-b173-4ff17e3e612c"
       }
     ],
-    "used_designators": "RN4,RN6,F1,C2-9,C82,#PWR48-52",
+    "used_designators": "#PWR15,#PWR48-52,ANT_PWR_SEL1,C2-9,C82,F1,R26,RN4,RN6-7",
     "variants": []
   },
   "sheets": [

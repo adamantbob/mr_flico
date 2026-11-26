@@ -1132,6 +1132,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "LoRaWAN Radio Module for active flight telematics.\nBased on the RFM95 module"
+		(exclude_from_sim no)
+		(at 181.356 173.482 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "540dba43-f516-4034-abeb-fc05fafc8bd5")
+	)
 	(text "1.6mm, 0.62in board thickness"
 		(exclude_from_sim no)
 		(at 186.436 67.31 0)
@@ -1141,6 +1152,26 @@
 			)
 		)
 		(uuid "58dcdcb0-486a-4397-919c-4cbb23248677")
+	)
+	(text "LoRaWAN Radio"
+		(exclude_from_sim no)
+		(at 195.834 189.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "da3dc460-b89a-41af-81f8-ab9f1eadf945")
+	)
+	(text "11/25/26"
+		(exclude_from_sim no)
+		(at 213.106 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "eefd1992-96a9-4b7c-aaf0-6f3cfe1a1d2b")
 	)
 	(junction
 		(at 113.03 58.42)

@@ -3052,6 +3052,16 @@
 		)
 		(uuid "1aa0108c-4b96-492b-8d43-c0bf78e711c9")
 	)
+	(text "Power & USB"
+		(exclude_from_sim no)
+		(at 194.056 189.992 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "200efa9e-ec61-49dc-95ea-567aeea8d3be")
+	)
 	(text "Parallel Caps \nfor larger bulk"
 		(exclude_from_sim no)
 		(at 79.756 135.128 0)
@@ -3084,6 +3094,16 @@
 		)
 		(uuid "493cbb7f-bb16-4b01-a3a5-02e16f49cf10")
 	)
+	(text "11/25/26"
+		(exclude_from_sim no)
+		(at 213.614 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5d469f10-ed72-415d-902e-28ede847dd0b")
+	)
 	(text "Input Protection:\n | TVS Diode\n | LM74700 Ideal Diode\n- HL2306 is chosen to nominal power draw of ~1A from the battery\n- 9V TVS with Clamp voltage of 15 V, set to protect 82140's (max V 17V)\n- 1.5A Resettable Fuse, for when battery is inevitably plugged in backwards"
 		(exclude_from_sim no)
 		(at 17.78 22.86 0)
@@ -3107,7 +3127,7 @@
 	)
 	(text "Power Input\n-USB 5V (Priority over Battery Power)\n-Battery Power, 2S, 5V-8.4V\n\nTODO:\nx | Power monitoring: 3.3V Current draw (shunt)\n  | 5V Rail\n  | 3V3 Rail"
 		(exclude_from_sim no)
-		(at 88.392 176.276 0)
+		(at 179.324 176.276 0)
 		(effects
 			(font
 				(size 1.27 1.27)

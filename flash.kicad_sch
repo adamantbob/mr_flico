@@ -986,6 +986,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Flash Memory for RP2350"
+		(exclude_from_sim no)
+		(at 188.214 189.992 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1c3f2038-78ad-4bad-a226-338f1b4b5e8e")
+	)
 	(text "##TODO:Check Footprint"
 		(exclude_from_sim no)
 		(at 160.782 107.442 0)
@@ -995,6 +1006,16 @@
 			)
 		)
 		(uuid "a34ff046-686e-4349-95e3-378776e0eeeb")
+	)
+	(text "11/25/26"
+		(exclude_from_sim no)
+		(at 214.122 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fc4bb109-ddd5-4a0e-b50b-a9a8479cb966")
 	)
 	(junction
 		(at 175.26 69.85)

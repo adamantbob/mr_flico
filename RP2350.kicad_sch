@@ -2454,6 +2454,27 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "11/25/26"
+		(exclude_from_sim no)
+		(at 214.63 193.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "041f429a-ae6a-402e-be49-dc2705cadd97")
+	)
+	(text "Microcontroller"
+		(exclude_from_sim no)
+		(at 188.722 189.484 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "13c26269-b6ab-485c-80de-1b6072a409c5")
+	)
 	(text "*****NEED UPDATE*****\nGPIO Pin Map (uC perspective)\n 4 I2C_SDA\n 5 I2C_SCL\n\n 6 RADIO_DIO0\n 7 RADIO_RESET\n 8 RADIO_SPI1_MISO\n 9 RADIO_CS\n10 RADIO_SPI1_CLK\n11 RADIO_SPI1_MOSI\n\n12 GPS_UART0_tx\n13 GPS_UART0_rx\n\n16 SDCARD_SPI0_MISO\n17 SDCARD_SPI0_CS\n18 SDCARD_SPI0_CLK\n19 SDCARD_SPI0_MOSI"
 		(exclude_from_sim no)
 		(at 242.316 140.208 0)

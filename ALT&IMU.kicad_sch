@@ -1521,6 +1521,17 @@
 		)
 		(uuid "44ad2063-aff4-417c-90e3-f1d19583e44a")
 	)
+	(text "Altimeter & Inertial Measurement Unit Sensors\nProvides barometric pressure and 6 axis intertial measurements.\nIMU has low range 3 axis accelerometer, high range accelerometer, and gyro"
+		(exclude_from_sim no)
+		(at 183.388 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "822f1fe6-a9b8-4c0a-ac39-e1b0dbe3393a")
+	)
 	(text "LSM6DSK320X has internal timestamping, interrupt not needed"
 		(exclude_from_sim no)
 		(at 203.962 68.834 0)
@@ -1550,6 +1561,16 @@
 			)
 		)
 		(uuid "d0a76173-d99f-44c6-9ad8-3757b896fd05")
+	)
+	(text "11/25/26"
+		(exclude_from_sim no)
+		(at 213.868 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ebe7ac10-c694-4067-8f37-2f47875963cb")
 	)
 	(junction
 		(at 88.9 59.69)
