@@ -11,6 +11,11 @@
 # Cache files
 fp-info-cache
 
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
 # Editor and IDE local history / workspaces
 .history/
 .vscode/
@@ -21,6 +26,7 @@ Thumbs.db
 .DS_Store
 
 # Manufacturing and export outputs (uncomment if you generate these locally and don't track them)
+build/
 # gerbers/
 # *.gbr
 # *.drl

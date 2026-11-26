@@ -1,0 +1,36 @@
+name: Render KiCad PDFs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  render-pdfs:
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python dependencies
+        run: |
+          python3 -m venv /tmp/render-venv
+          /tmp/render-venv/bin/pip install --no-cache-dir -r scripts/requirements.txt
+
+      - name: Render schematics, composite PCB, and 3D views
+        run: |
+          /tmp/render-venv/bin/python scripts/render_pdfs.py \
+            --include-inner \
+            --rev "${GITHUB_SHA::7}" \
+            --output build/pdfs/mike_rocket_docs.pdf
+
+      - name: Upload combined PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mike_rocket-docs-pdf
+          path: build/pdfs/mike_rocket_docs.pdf
+          if-no-files-found: error
