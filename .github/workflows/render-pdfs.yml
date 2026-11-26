@@ -9,6 +9,8 @@ on:
 jobs:
   render-pdfs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     container:
       image: kicad/kicad:10.0
       options: --user root
@@ -17,23 +19,36 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python dependencies
+      - name: Set up Python & PDF preview dependencies
         run: |
           apt-get update
-          apt-get install -y --no-install-recommends python3-pip
+          apt-get install -y --no-install-recommends python3-pip poppler-utils
           pip3 install --no-cache-dir --break-system-packages -r scripts/requirements.txt
 
-      - name: Render schematics, composite PCB, and 3D views
+      - name: Render schematics, composite PCB, 3D views, and top-page preview
         run: |
           REV=$(printf '%.7s' "$GITHUB_SHA")
           python3 scripts/render_pdfs.py \
             --include-inner \
             --rev "$REV" \
-            --output build/pdfs/mike_rocket_docs.pdf
+            --output docs/mike_rocket_docs.pdf \
+            --preview-out docs/mike_rocket_preview.png
+
+      - name: Commit updated PDF and preview on main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/mike_rocket_docs.pdf docs/mike_rocket_preview.png
+          if ! git diff --cached --quiet; then
+            git commit -m "docs: update rendered PDF and preview [skip ci]"
+            git push
+          fi
 
       - name: Upload combined PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: mike_rocket-docs-pdf
-          path: build/pdfs/mike_rocket_docs.pdf
+          path: docs/mike_rocket_docs.pdf
           if-no-files-found: error

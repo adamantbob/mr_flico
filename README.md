@@ -10,6 +10,16 @@ Designed in **KiCad** as the companion hardware for the [`rocket_vR`](https://gi
 
 ---
 
+## 📄 Schematics & PCB Documentation
+
+Click the preview below to open the full combined PDF (schematics, composite PCB layers, and 3D renders):
+
+[![Schematics & PCB Preview](docs/mike_rocket_preview.png)](docs/mike_rocket_docs.pdf)
+
+> Direct link: [`docs/mike_rocket_docs.pdf`](docs/mike_rocket_docs.pdf)
+
+---
+
 ## 🚀 System Architecture & Hardware Specs
 
 | Subsystem | Component / IC | Bus / Interface | Purpose |

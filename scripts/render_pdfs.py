@@ -293,6 +293,35 @@ def merge_pdfs(pdf_writer_cls: object, pdf_paths: list[Path], output_path: Path)
     print(f"[render] Wrote combined PDF: {output_path}")
 
 
+def export_pdf_preview(pdf_path: Path, preview_png: Path, dpi: int = 150) -> None:
+    """Render page 1 of the combined PDF to a PNG preview image using pdftoppm."""
+    pdftoppm = shutil.which("pdftoppm")
+    if not pdftoppm:
+        raise FileNotFoundError(
+            "Could not find 'pdftoppm' (install poppler-utils) required for --preview-out."
+        )
+    preview_png.parent.mkdir(parents=True, exist_ok=True)
+    out_prefix = preview_png.with_suffix("")
+    cmd = [
+        pdftoppm,
+        "-png",
+        "-f",
+        "1",
+        "-l",
+        "1",
+        "-r",
+        str(dpi),
+        "-singlefile",
+        str(pdf_path),
+        str(out_prefix),
+    ]
+    print(f"[render] Running: {' '.join(cmd)}")
+    result = subprocess.run(cmd, check=False)
+    if result.returncode != 0:
+        raise RuntimeError(f"pdftoppm exited with code {result.returncode}")
+    print(f"[render] Wrote preview PNG: {preview_png}")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Render KiCad schematics, composite PCB views, and 3D renders into one PDF."
@@ -360,6 +389,12 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=None,
         help="Optional directory to keep intermediate PDFs and 3D PNGs.",
+    )
+    parser.add_argument(
+        "--preview-out",
+        type=Path,
+        default=None,
+        help="Optional PNG path to render page 1 of the combined PDF (requires pdftoppm).",
     )
     return parser.parse_args()
 
@@ -433,6 +468,8 @@ def main() -> int:
                 )
 
             merge_pdfs(pdf_writer_cls, parts, output_pdf)
+            if args.preview_out:
+                export_pdf_preview(output_pdf, args.preview_out.resolve())
         finally:
             if temp_ctx is not None:
                 temp_ctx.cleanup()
